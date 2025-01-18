@@ -1,65 +1,44 @@
-# pyreqs README
 
-- This is the README for your extension "pyreqs". After writing up a brief description, we recommend including the following sections.
+# pyreqs
+
+Welcome to **pyreqs**, a Visual Studio Code extension that automatically generates a ```requirements.txt``` file for your Python projects. With pyreqs, you can save time and ensure your dependencies are accurately listed by scanning your project files.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
-For example if there is an image subfolder under your extension project workspace:
+- **Automatic Dependency Detection**: Scans all ```.py``` files in your workspace to identify required libraries.
 
-\!\[feature X\]\(images/feature-x.png\)
+- **Excludes Standard Libraries**: Filters out Python's built-in modules, ensuring only external libraries are included.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- **Handles ```.gitignore```**: Respects your ```.gitignore``` file to avoid unnecessary files and directories like ```.venv```.
 
-## Requirements
+- **One-Click Execution**: Generate a ```requirements.txt``` file by simply running the ```Generate requirements.txt``` command.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## Example
+
+1. Open your Python project in VS Code.
+
+2. Run the command ```Generate requirements.txt``` from the Command Palette (```Ctrl+Shift+P``` or ```Cmd+Shift+P``` on macOS).
+
+3. Find your ```requirements.txt``` file in the root of your workspace.
+
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+This extension currently does not require additional settings. Future updates may include customizable options.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- Large projects with thousands of files may take longer to scan.
+
+- Nested imports within dynamically loaded modules might not be detected.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
-
 ### 1.0.0
 
-Initial release of ...
+- Initial release of pyreqs.
 
-### 1.0.1
+- Automatic generation of ```requirements.txt``` with standard library exclusion using Command Palette
 
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+- ```.gitignore``` support to exclude ignored files and directories.
