@@ -1,9 +1,20 @@
-![Pyreqs Banner](pyrequs_extension/images/icon.png)
 
-# pyreqs
+
+<br />
+<div align="center">
+  <a>
+    <img src="pyrequs_extension/images/icon.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">pyreqs</h3>
+</div>
+<br />
+<br />
+<br />
 
 Welcome to **pyreqs**, a Visual Studio Code extension that automatically generates a ```requirements.txt``` file for your Python projects. With pyreqs, you can save time and ensure your dependencies are accurately listed by scanning your project files.
-
+<br />
+<br />
 ## Features
 
 
