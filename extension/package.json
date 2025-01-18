@@ -2,7 +2,8 @@
   "name": "pyreqs",
   "displayName": "PyReqs",
   "description": "PyReqs automatically generates a requirements.txt file by scanning your Python project for dependencies.",
-  "version": "0.0.1",
+  "icon": "images/icon.png",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.96.0"
   },
