@@ -13,9 +13,7 @@
     "Data Science",
     "Programming Languages"
   ],
-  "activationEvents": [
-    "onCommand:pyreqs.generateRequirements"
-  ],
+  "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
     "commands": [
@@ -40,6 +38,7 @@
   },
   "dependencies": {
     "fs": "^0.0.1-security",
+    "ignore": "^7.0.3",
     "path": "^0.12.7"
   }
 }
