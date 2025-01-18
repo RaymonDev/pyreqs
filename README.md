@@ -1,3 +1,4 @@
+![Pyreqs Banner](pyrequs_extension/images/icon.png)
 
 # pyreqs
 
